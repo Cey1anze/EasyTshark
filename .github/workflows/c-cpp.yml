@@ -26,9 +26,8 @@ jobs:
       - name: Build project with run.sh
         run: ./run.sh --strict-test
 
-      # 如果需要上传构建产物，可以启用这一步
-      # - name: Upload build artifacts
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: build-output
-      #     path: build/
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: build/
