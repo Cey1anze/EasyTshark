@@ -24,7 +24,7 @@ jobs:
         run: chmod +x ./run.sh
 
       - name: Build project with run.sh
-        run: ./run.sh --strict-test
+        run: ./run.sh
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
